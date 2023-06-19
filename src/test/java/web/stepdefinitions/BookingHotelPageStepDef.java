@@ -1,17 +1,18 @@
-package stepdefinitions;
+package web.stepdefinitions;
 
 import java.util.Properties;
 import org.junit.Assert;
-import com.app.commons.GenericUtils;
-import com.app.commons.BrowserUtils;
-import com.app.pageobjects.BookingHotelPage;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import web.app.commons.BrowserUtils;
+import web.app.commons.GenericUtils;
+import web.app.pageobjects.BookingHotelPage;
 
 public class BookingHotelPageStepDef {
 	
 	private final BookingHotelPage bookingHotelPage = new BookingHotelPage();
-	private final Properties property = GenericUtils.AppFileReader("src/main/resources/data/App.properties");
+	private final Properties property = GenericUtils.AppFileReader("src/main/resources/data/web/App.properties");
 	private final String url = property.getProperty("Booking_URL");
 
 	@Given("User launches the booking application")

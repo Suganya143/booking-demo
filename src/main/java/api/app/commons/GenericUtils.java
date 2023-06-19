@@ -1,9 +1,8 @@
-package com.app.commons;
+package api.app.commons;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Calendar;
 import java.util.Properties;
 
 public class GenericUtils {
@@ -23,11 +22,5 @@ public class GenericUtils {
 			e.printStackTrace();
 		}
 		return property;
-	}
-	
-	public static int getDayByIncrementDaysFromcurrentDate(int incrementDaysBy) {
-		 Calendar currentDate = Calendar.getInstance();  
-		 currentDate.add(Calendar.DAY_OF_MONTH, incrementDaysBy);
-		 return currentDate.get(Calendar.DAY_OF_MONTH);
 	}
 }

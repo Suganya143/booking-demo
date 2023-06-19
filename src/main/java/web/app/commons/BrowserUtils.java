@@ -1,4 +1,4 @@
-package com.app.commons;
+package web.app.commons;
 
 import java.time.Duration;
 import java.util.Iterator;

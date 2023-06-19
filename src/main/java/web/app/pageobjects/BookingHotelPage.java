@@ -1,4 +1,4 @@
-package com.app.pageobjects;
+package web.app.pageobjects;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-import com.app.commons.BrowserUtils;
+import web.app.commons.BrowserUtils;
 
 public class BookingHotelPage {
 
